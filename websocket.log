@@ -1,0 +1,23 @@
+
+   RuntimeException 
+
+  Failed to listen on "tcp://0.0.0.0:8090": Address already in use
+
+  at vendor/react/socket/src/TcpServer.php:164
+    160|             \STREAM_SERVER_BIND | \STREAM_SERVER_LISTEN,
+    161|             \stream_context_create(array('socket' => $context))
+    162|         );
+    163|         if (false === $this->master) {
+  > 164|             throw new \RuntimeException('Failed to listen on "' . $uri . '": ' . $errstr, $errno);
+    165|         }
+    166|         \stream_set_blocking($this->master, false);
+    167| 
+    168|         $this->resume();
+
+      [2m+2 vendor frames [22m
+  3   app/Console/Commands/WebSocketServer.php:45
+      Ratchet\Server\IoServer::factory(Object(App\Http\Controllers\websocket\Pusher))
+
+      [2m+14 vendor frames [22m
+  18  artisan:37
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
