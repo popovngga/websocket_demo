@@ -60,10 +60,7 @@
                     </div>
                     <div class="card-header" v-if="history">Activity: <p v-for="activity in history">{{activity}}</p></div>
                 </div>
-                <span class="alert-danger" role="alert">
-                    <strong>{{error_message}}</strong>
-                </span>
-                <span class="alert-success" role="alert">
+                <span :style="color" role="alert">
                     <strong>{{p}}</strong>
                 </span>
             </div>
@@ -82,6 +79,7 @@
                 side:'',
                 error_message:'',
                 instrument:'',
+                color: '',
                 size:'',
                 input_size:{},
                 p: '',
@@ -113,10 +111,8 @@
                 });
             Echo.private('response-channel')
                 .listen('ResponseEvent', (e) => {
-                    this.p = '';
-                    this.error_message = '';
+                    this.color = 'color:#'+((1<<24)*Math.random()|0).toString(16);
                     this.p = e.response;
-                    this.error_message = this.p.error_message;
                 });
             Echo.join('response-channel')
                 .here((users) => {

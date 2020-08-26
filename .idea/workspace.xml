@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e9dbde43-2d32-495c-8b91-3c892734d405" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/okcoin/OkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/OkController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +189,7 @@
       <workItem from="1597992599159" duration="19426000" />
       <workItem from="1598337055283" duration="276000" />
       <workItem from="1598424714104" duration="13868000" />
-      <workItem from="1598441817324" duration="10577000" />
+      <workItem from="1598441817324" duration="11137000" />
     </task>
     <servers />
   </component>

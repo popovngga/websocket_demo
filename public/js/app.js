@@ -2004,9 +2004,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2016,6 +2013,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       side: '',
       error_message: '',
       instrument: '',
+      color: '',
       size: '',
       input_size: {},
       p: '',
@@ -2053,10 +2051,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
             case 2:
               Echo["private"]('response-channel').listen('ResponseEvent', function (e) {
-                _this.p = '';
-                _this.error_message = '';
+                _this.color = 'color:#' + ((1 << 24) * Math.random() | 0).toString(16);
                 _this.p = e.response;
-                _this.error_message = _this.p.error_message;
               });
               Echo.join('response-channel').here(function (users) {
                 var _iterator = _createForOfIteratorHelper(users),
@@ -44817,11 +44813,7 @@ var render = function() {
             : _vm._e()
         ]),
         _vm._v(" "),
-        _c("span", { staticClass: "alert-danger", attrs: { role: "alert" } }, [
-          _c("strong", [_vm._v(_vm._s(_vm.error_message))])
-        ]),
-        _vm._v(" "),
-        _c("span", { staticClass: "alert-success", attrs: { role: "alert" } }, [
+        _c("span", { style: _vm.color, attrs: { role: "alert" } }, [
           _c("strong", [_vm._v(_vm._s(_vm.p))])
         ])
       ])
