@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('send', 'FormController@store');
 Route::post('update/{id}', 'FormController@store');
+Route::any('index', 'okcoin\OkController@index');

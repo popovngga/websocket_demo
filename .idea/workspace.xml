@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9dbde43-2d32-495c-8b91-3c892734d405" name="Default Changelist" comment="" />
+    <list default="true" id="e9dbde43-2d32-495c-8b91-3c892734d405" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/AccountApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/ChecksumTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/MarginApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/OkController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/SpotApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/Utils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/websocket_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/websocket_demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +38,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/testtest/Ratchet" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -130,6 +154,15 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/vendor/react/zmq" />
+      <path value="$PROJECT_DIR$/vendor/pusher/pusher-php-server" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/sodium_compat" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/ringcentral/psr7" />
+      <path value="$PROJECT_DIR$/vendor/clue/buzz-react" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-stream" />
+      <path value="$PROJECT_DIR$/vendor/react/http-client" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-websockets" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gMgJbbPJ8u1k90RTyzZIfBFfd4" />
@@ -142,6 +175,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -168,7 +206,9 @@
       <option name="presentableId" value="Default" />
       <updated>1597929804615</updated>
       <workItem from="1597929806120" duration="6171000" />
-      <workItem from="1597992599159" duration="13311000" />
+      <workItem from="1597992599159" duration="19426000" />
+      <workItem from="1598337055283" duration="276000" />
+      <workItem from="1598424714104" duration="13868000" />
     </task>
     <servers />
   </component>
@@ -176,14 +216,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="573" y="262" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597932391118">
+    <state x="573" y="262" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598435857838">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="573" y="262" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1597932391118" />
-    <state x="589" y="323" width="555" height="356" key="NewPhpClassDialog" timestamp="1598007167886">
+    <state x="573" y="262" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1598435857838" />
+    <state x="589" y="323" width="604" height="356" key="NewPhpClassDialog" timestamp="1598427727221">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="589" y="323" width="555" height="356" key="NewPhpClassDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1598007167886" />
+    <state x="589" y="323" width="604" height="356" key="NewPhpClassDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1598427727221" />
     <state x="637" y="424" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598007504593">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
