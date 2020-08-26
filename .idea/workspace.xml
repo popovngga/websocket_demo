@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9dbde43-2d32-495c-8b91-3c892734d405" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/AccountApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/ChecksumTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/MarginApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/OkController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/SpotApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/Utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/websocket_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/websocket_demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/okcoin/OkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/okcoin/OkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +162,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php_google_drive/google_integration" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -209,6 +191,7 @@
       <workItem from="1597992599159" duration="19426000" />
       <workItem from="1598337055283" duration="276000" />
       <workItem from="1598424714104" duration="13868000" />
+      <workItem from="1598441817324" duration="10577000" />
     </task>
     <servers />
   </component>
@@ -220,6 +203,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="573" y="262" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1598435857838" />
+    <state x="623" y="262" width="424" height="479" key="FileChooserDialogImpl" timestamp="1598446499744">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="623" y="262" width="424" height="479" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1598446499744" />
     <state x="589" y="323" width="604" height="356" key="NewPhpClassDialog" timestamp="1598427727221">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

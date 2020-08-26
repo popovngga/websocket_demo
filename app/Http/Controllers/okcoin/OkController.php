@@ -24,7 +24,7 @@ class OkController
         //$res = $obj -> getCoinWithdrawalHistory($coin);
         //$res = $obj -> getDepositHistory();
         //$res = $obj -> getCoinDepositHistory($coin);
-        $res = $obj -> getCurrencies();
+        //$res = $obj -> getCurrencies();
         //$res = $obj -> getWithdrawalFee($coin);
 
         /**
@@ -36,7 +36,7 @@ class OkController
         //$res = $obj -> getAccountInfo();
         //$res = $obj -> getCoinAccountInfo($currency);
         //$res = $obj -> getLedgerRecord($currency);
-        //$res = $obj -> takeOrder($instrumentId,"buy","0.1","2");
+        $res = $obj -> takeOrder($config['instrument_id'],$config['side'],$config['size'],$config['price']);
         //$res = $obj -> revokeOrder($instrumentId,"3452612358987776");
         //$res = $obj -> getOrdersList($instrumentId,"2","","",1);
         //$res = $obj -> getOrderInfo($instrumentId,"3271189018971137");
@@ -67,5 +67,12 @@ class OkController
         //$res = $obj -> getFills($instrumentId,"3292706588398592");
 
         broadcast(new ResponseEvent($res));
+    }
+
+    public function coinInfo(Request $config)
+    {
+        $config = $config->all();
+        $obj = new SpotApi($config);
+        return $obj -> getCoinInfo();
     }
 }
