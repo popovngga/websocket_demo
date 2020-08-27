@@ -5,6 +5,7 @@ namespace App\Http\Controllers\okcoin;
 
 
 use App\Events\ResponseEvent;
+use App\Query;
 use Illuminate\Http\Request;
 
 class OkController
@@ -12,8 +13,15 @@ class OkController
     public  function index(Request $config)
     {
         $config = $config->all();
-        $obj = new AccountApi($config);
-        $coin = "EOS";
+        if ($config['side'] === 'something') {
+            $obj = new AccountApi($config);
+            $res = $obj -> getCurrencies();
+        } else {
+            $obj = new SpotApi($config);
+            $res = $obj -> takeOrder($config['instrument_id'],$config['side'],$config['size'],$config['price']);
+        }
+        //$obj = new AccountApi($config);
+        //$coin = "EOS";
         //$res = $obj -> getWalletInfo();
         //$res = $obj -> getSpecialWalletInfo($coin);
         //$res = $obj -> transfer($coin,"0.1","6","1","","");
@@ -30,13 +38,13 @@ class OkController
         /**
          * 币币
          */
-        $instrumentId = "BTC-USD";
-        $currency = "EOS";
-        $obj = new SpotApi($config);
+        //$instrumentId = "BTC-USD";
+        //$currency = "EOS";
+        //$obj = new SpotApi($config);
         //$res = $obj -> getAccountInfo();
         //$res = $obj -> getCoinAccountInfo($currency);
         //$res = $obj -> getLedgerRecord($currency);
-        $res = $obj -> takeOrder($config['instrument_id'],$config['side'],$config['size'],$config['price']);
+        //$res = $obj -> takeOrder($config['instrument_id'],$config['side'],$config['size'],$config['price']);
         //$res = $obj -> revokeOrder($instrumentId,"3452612358987776");
         //$res = $obj -> getOrdersList($instrumentId,"2","","",1);
         //$res = $obj -> getOrderInfo($instrumentId,"3271189018971137");
@@ -48,9 +56,9 @@ class OkController
         //$res = $obj -> getDeal($instrumentId);
         //$res = $obj -> getKine($instrumentId,3600);
 
-        $instrumentId = "BTC-USD";
-        $currency = "BTC";
-        $obj = new MarginApi($config);
+        //$instrumentId = "BTC-USD";
+        //$currency = "BTC";
+        //$obj = new MarginApi($config);
         //$res = $obj -> getAccountInfo();
         //$res = $obj -> getCoinAccountInfo($instrumentId);
         //$res = $obj -> getLedgerRecord($instrumentId);
@@ -66,6 +74,10 @@ class OkController
         //$res = $obj -> getOrderInfo($instrumentId,"3292706588398592");
         //$res = $obj -> getFills($instrumentId,"3292706588398592");
 
+        Query::create([
+            'query_result' => json_encode($res),
+            'query_param' => json_encode($config)
+        ]);
         broadcast(new ResponseEvent($res));
     }
 

@@ -31,6 +31,7 @@
                                         <option disabled value="">Choose something</option>
                                         <option value="sell">Sell</option>
                                         <option value="buy">Buy</option>
+                                        <option value="something">Something else</option>
                                     </select>
                                 </div>
                             </div>
@@ -43,7 +44,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group row" v-if="instrument">
+                            <div class="form-group row" v-if="side">
                                 <label for="size" class="col-md-4 col-form-label text-md-right">Quantity to buy or sell</label>
                                 <div class="col-md-6">
                                     <input id="size" type="number" :min="this.input_size.min_size" :step="this.input_size.size_increment" class="form-control" name="size" required v-model="size">
@@ -90,9 +91,15 @@
         },
         methods: {
             send(event){
+                let instrument_id ='';
+                if (this.side === 'something') {
+                    instrument_id = 'something';
+                } else {
+                    instrument_id = JSON.parse(this.instrument).instrument_id;
+                }
                 event.preventDefault();
                 axios.post(`/api/index?apiKey=${this.apiKey}&apiSecret=${this.apiSecret}&passphrase=${this.passphrase}`, {
-                    'instrument_id': JSON.parse(this.instrument).instrument_id,
+                    'instrument_id': instrument_id,
                     'side': this.side,
                     'size': this.input_size.min_size,
                     'price': this.size,

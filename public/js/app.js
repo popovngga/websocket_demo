@@ -2004,6 +2004,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2024,9 +2025,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   methods: {
     send: function send(event) {
+      var instrument_id = '';
+
+      if (this.side === 'something') {
+        instrument_id = 'something';
+      } else {
+        instrument_id = JSON.parse(this.instrument).instrument_id;
+      }
+
       event.preventDefault();
       axios.post("/api/index?apiKey=".concat(this.apiKey, "&apiSecret=").concat(this.apiSecret, "&passphrase=").concat(this.passphrase), {
-        'instrument_id': JSON.parse(this.instrument).instrument_id,
+        'instrument_id': instrument_id,
         'side': this.side,
         'size': this.input_size.min_size,
         'price': this.size
@@ -44681,7 +44690,13 @@ var render = function() {
                         _vm._v("Sell")
                       ]),
                       _vm._v(" "),
-                      _c("option", { attrs: { value: "buy" } }, [_vm._v("Buy")])
+                      _c("option", { attrs: { value: "buy" } }, [
+                        _vm._v("Buy")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "something" } }, [
+                        _vm._v("Something else")
+                      ])
                     ]
                   )
                 ])
@@ -44750,7 +44765,7 @@ var render = function() {
                   ])
                 : _vm._e(),
               _vm._v(" "),
-              _vm.instrument
+              _vm.side
                 ? _c("div", { staticClass: "form-group row" }, [
                     _c(
                       "label",
